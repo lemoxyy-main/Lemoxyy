@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.scss" /> -->
+    <link rel="icon" href="../img/favicon.jpg" />
+    <title>Follow Me</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: sign;
+        src: url(./font/Driscutty\ Signature.otf);
+      }
+      @font-face {
+        font-family: choret;
+        src: url(./font/ChoretFudyngBubble-Regular.ttf);
+      }
+      @font-face {
+        font-family: notes;
+        src: url(./font/Magicalnotes.ttf);
+      }
+      body {
+        background-color: black;
+        color: whitesmoke;
+      }
+      /* #insta {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+            }
+            #face {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+            } */
+
+      /*
+            .card {
+              cursor: pointer;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              transition: all 0.3s ease-in-out;
+            }
+            .card:hover {
+              transform: translateY(-15px);
+            }
+            .social-head:hover > :not(:hover) {
+              opacity: 0.5;
+            }
+
+            #git {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+            }
+            #stack {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+            }
+            #reddit {
+              cursor: pointer;
+
+            }
+            #thread {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+              background-color: white;
+            }
+            #X {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+              background-color: white;
+            }
+            #pin {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+              background-color: white;
+            } */
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 15px;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+        right: 20px;
+        /* justify-content: space-evenly; */
+        /* margin-top: 50px;
+        position: absolute;
+        right: 40px; */
+        /* width: 45ek; */
+      }
+
+      .card1 {
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 30px;
+        /* background: #669bbc; */
+        background-image: url("./img/insa1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.3s ease-in-out;
+      }
+      .card1:hover {
+        transform: translateY(-15px);
+      }
+      .card2 {
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-left: 20px;
+        /* background: #669bbc; */
+        background-image: url("./img/face.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* width: 100px; */
+        /* height: 100px; */
+        /* margin-top: 50px; */
+
+        /* border-radius: 7px; */
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.3s ease-in-out;
+      }
+      .card2:hover {
+        transform: translateY(-15px);
+      }
+      .card3 {
+        /* background: #669bbc; */
+        background-image: url("./img/git.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 50px;
+
+        margin-left: 27px;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.3s ease-in-out;
+      }
+      .card3:hover {
+        transform: translateY(-15px);
+      }
+      .card4 {
+        /* background: #669bbc; */
+        background-image: url("./img/reddit.png             ");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 20px;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.3s ease-in-out;
+      }
+      .card4:hover {
+        transform: translateY(-15px);
+      }
+      .card5 {
+        /* background: #669bbc; */
+        background-image: url("./img/stack.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 30px;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.3s ease-in-out;
+      }
+      .card5:hover {
+        transform: translateY(-15px);
+      }
+      .card6 {
+        /* background: #669bbc; */
+        background-image: url("./img/thread.svg");
+        background-color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-left: 20px;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.3s ease-in-out;
+      }
+      .card6:hover {
+        transform: translateY(-15px);
+      }
+      .card7 {
+        margin-left: 20px;
+        /* background: #669bbc; */
+        background-image: url("./img/X.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 27px;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.3s ease-in-out;
+      }
+      .card7:hover {
+        transform: translateY(-15px);
+      }
+      .card8 {
+        /* background: #669bbc; */
+        background-image: url("./img/pinterest.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 20px;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.3s ease-in-out;
+      }
+      .card8:hover {
+        transform: translateY(-15px);
+      }
+      .card-container:hover > :not(:hover) {
+        opacity: 0.5;
+      }
+      body {
+        background: black;
+      }
+      /*
+      .hidden {
+        opacity: 0;
+      } */
+      .console-container {
+        font-family: choret;
+        /* color: white; */
+        font-size: 30px;
+        text-align: left;
+        margin-top: 40px;
+        /* margin-right: 20px; */
+        position: absolute;
+        left: 20px;
+        /*
+        display: block;
+        position: absolute;
+        color: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto; */
+      }
+      .console-underscore {
+        display: inline-block;
+        position: relative;
+        top: -0.14em;
+        left: 10px;
+      }
+      #back a img {
+        display: flex;
+        height: 70px;
+        width: 70px;
+        position: relative;
+        left: 90%;
+      }
+      @media (max-width: 768px) {
+        #back a img {
+          display: flex;
+          height: 70px;
+          width: 70px;
+          position: relative;
+          left: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="console-container">
+      <span id="text"></span>
+      <div class="console-underscore" id="console">&#95;</div>
+    </div>
+
+    <h2 id="social-head"></h2>
+    <br /><br /><br />
+    <!-- <div class="social">
+    
+      <div class="card">
+      <span class="card">
+        <a href="https://www.instagram.com/lemoxyy__/"
+          ><img id="insta" src="./img/insa1.png" alt="insta"
+        /></a>
+      </span>
+      <span class="card">
+        <a href="https://www.facebook.com/lemoxyy/"
+          ><img id="face" src="./img/face.jpeg" alt="face"
+        /></a>
+      </span>
+      <span class="card">
+        <a href="https://github.com/Lemoxyy"
+          ><img id="git" src="./img/git.jpeg" alt="git"
+        /></a>
+      </span>
+      <span class="card">
+        <a href="https://stackoverflow.com/users/22755617/lemoxyy"
+          ><img id="stack" src="./img/stack.png" alt="stack"
+        /></a>
+      </span>
+      <span class="card">
+        <a href="https://www.reddit.com/user/PayApprehensive6534/"
+          ><img id="reddit" src="./img/reddit.png" alt="reddit" /></a
+      ></span>
+      <span class="card">
+        <a href="https://www.threads.net/@lemoxyy__"
+          ><img id="thread" src="./img/thread.svg" alt="thread"
+        /></a>
+      </span>
+      <span class="card">
+        <a href="https://x.com/Lemoxyy_"
+          ><img id="X" src="./img/X.jpg" alt="X"
+        /></a>
+      </span>
+      <span class="card">
+        <a href="https://www.pinterest.com/Lemoxyy/"
+          ><img id="pin" src="./img/pinterest.png" alt="pinterest"
+        /></a>
+      </span>
+      </div> 
+    </div> -->
+    <div id="back">
+      <a href="../index.html"
+        ><img src="img/backarrow.png" alt="back_arrow  "
+      /></a>
+    </div>
+    <div class="card-container">
+      <a href="https://www.instagram.com/lemoxyy__/">
+        <div class="card1"></div>
+      </a>
+      <a href="https://www.facebook.com/lemoxyy/">
+        <div class="card2"></div>
+      </a>
+      <a href="https://github.com/Lemoxyy">
+        <div class="card3"></div>
+      </a>
+      <a href="https://www.reddit.com/user/PayApprehensive6534/">
+        <div class="card4"></div>
+      </a>
+      <a href="https://stackoverflow.com/users/22755617/lemoxyy">
+        <div class="card5"></div>
+      </a>
+      <a href="https://www.threads.net/@lemoxyy__/">
+        <div class="card6"></div>
+      </a>
+      <a href="https://x.com/Lemoxyy_">
+        <div class="card7"></div>
+      </a>
+      <a href="https://www.pinterest.com/Lemoxyy/">
+        <div class="card8"></div>
+      </a>
+    </div>
+    <br />
+    <br />
+    <script>
+      consoleText(["Social Handles'", "Follow Me", "Get Updates"], "text", [
+        "tomato",
+        "rebeccapurple",
+        "lightblue",
+      ]);
+
+      function consoleText(words, id, colors) {
+        if (colors === undefined) colors = ["#fff"];
+        var visible = true;
+        var con = document.getElementById("social-head");
+        var letterCount = 1;
+        var x = 1;
+        var waiting = false;
+        var target = document.getElementById(id);
+        target.setAttribute("style", "color:" + colors[0]);
+        window.setInterval(function () {
+          if (letterCount === 0 && waiting === false) {
+            waiting = true;
+            target.innerHTML = words[0].substring(0, letterCount);
+            window.setTimeout(function () {
+              var usedColor = colors.shift();
+              colors.push(usedColor);
+              var usedWord = words.shift();
+              words.push(usedWord);
+              x = 1;
+              target.setAttribute("style", "color:" + colors[0]);
+              letterCount += x;
+              waiting = false;
+            }, 1000);
+          } else if (letterCount === words[0].length + 1 && waiting === false) {
+            waiting = true;
+            window.setTimeout(function () {
+              x = -1;
+              letterCount += x;
+              waiting = false;
+            }, 1000);
+          } else if (waiting === false) {
+            target.innerHTML = words[0].substring(0, letterCount);
+            letterCount += x;
+          }
+        }, 120);
+        window.setInterval(function () {
+          if (visible === true) {
+            con.className = "console-underscore hidden";
+            visible = false;
+          } else {
+            con.className = "console-underscore";
+
+            visible = true;
+          }
+        }, 400);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: kawai;
+  src: url(./fonts/Kawaii.otf);
+}
+@font-face {
+  font-family: handwriting;
+  src: url(./fonts/Handwriting.ttf);
+}
+@font-face {
+  font-family: blog;
+  src: url(./fonts/The\ Sunday.otf);
+}
+#head1 {
+  text-align: center;
+  font-family: kawai;
+  font-weight: 200;
+  font-size: 3em;
+  padding-top: 20px;
+  /* text-decoration: underline; */
+}
+#copyright {
+  text-align: center;
+  color: #ffffff;
+  /* position: absolute;
+  bottom: 30%; */
+  /* margin-top: 100%; */
+  position: relative;
+  top: 270px;
+  left: 82em;
+  font-size: small;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+/* #logo{
+    border: 20px 20px 20px 20px;
+} */
+
+#blog {
+  font-size: 14px;
+  font-family: handwriting;
+  text-align: center;
+}
+
+#insa {
+  height: 15px;
+  border-radius: 10px 10px 10px 10px;
+}
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left:  50px;   */
+}
+
+#followbtn {
+  cursor: pointer;
+  /* border-radius: 20px 20px 20px 20px; */
+  border: none;
+  font-family: blog;
+  /* display:block; */
+  /* display: inline-block; */
+  background-color: transparent;
+  color: white;
+  /* position: absolute;
+    left: 397px; */
+}
+#followbtn:hover {
+  opacity: 0.8;
+}
+#followbtn:active {
+  box-shadow: rgba(206, 206, 206, 0.5);
+  /* animation: forwards; */
+}
+#buycoffee {
+  margin-left: -14px;
+  margin-top: 30px;
+  cursor: pointer;
+  /* border-radius: 20px 20px 20px 20px; */
+  border: none;
+  font-family: blog;
+  /* display:block; */
+  /* display: inline-block; */
+  background-color: transparent;
+  color: white;
+  /* position: absolute;
+    left: 380px; */
+}
+#buycoffee:hover {
+  opacity: 0.8;
+}
+#buycoffe:active {
+  box-shadow: rgba(206, 206, 206, 0.5);
+}
+/* #boxes{
+    position: relative;
+    left: 180px; 
+    text-align: center;
+    display: block;
+} */
+/* #milk {
+    height: 100px;
+    width: 100px;
+} */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: montserrat;
+  font-size: 40px;
+}
+
+a {
+  font-family: Montserrat;
+  position: relative;
+  text-decoration: none;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 0px;
+  left: 0%;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0%;
+  background: white;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid white;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: white;
+  /* opacity: 0.3; */
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.hover {
+  background-color: red;
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}

@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flexbox;
+}
+@font-face {
+  font-family: typewrite;
+  src: url(/Blog/fonts/Fragmentcore.otf);
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+  background-color: #000; /* Black background  body */
+}       
+.outer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 35em;
+  width: 50%;
+  position: relative;
+  left: 370px;
+  top: 50px;
+  border-radius: 30px;
+  /* animation-name: outer; */
+  /* animation-duration: 4s; */
+}
+@keyframes outer {
+  from {
+    position: relative;
+    left: 0px;
+    top: 50px;
+  }
+  to {
+    position: relative;
+    left: 370px;
+    top: 50px;
+  }
+}
+#username {
+  /* display: block; */
+  font-family: typewrite;
+  display: flexbox;
+  position: relative;
+  bottom: 40%;
+  font-size: 30px;
+}
+#username input {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 10%;
+  /* position: relative;
+  left: 100px; */
+}
+
+@media (max-width: 768px) {
+  .outer-box {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    animation: none;
+    position: relative;
+    left: 9rem;
+    top: 5em;
+    width: 250px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15); /* Light, transparent white */
+    backdrop-filter: blur(20px) saturate(180%); /* Blur and enhance colors */
+    -webkit-backdrop-filter: blur(20px) saturate(180%); /* Safari support */
+    border-radius: 15px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: subtle inner border */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 30px; /* Space inside the div */
+    color: #fff;
+  }
+
+  #username {
+    font-family: typewrite;
+    position: inherit;
+    right: 0px;
+    left: 30px;
+    outline: none;
+    font-size: 30px;
+  }
+  #username input {
+    font-size: 13px;
+    padding: 5px;
+    position: inherit;
+    left: 2px;
+    top: 10px;
+    padding: 7px;
+    font-size: 12px;
+    outline: none;
+    font-weight: 100px;
+    /* font-size: 16px; */
+  }
+}
