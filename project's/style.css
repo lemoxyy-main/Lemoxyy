@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: kawai;
-    src: url(/Lemoxyy/calcumy/asset/Kawai\ Animal.otf);
+    src: url(/calcumy/asset/Kawai\ Animal.otf);
 }
 body{
     background: black;
@@ -14,8 +14,11 @@ body{
 h1{
     display: flex;
     position: relative;
-    font: 14px / 28px D-DIN-Bold, Arial, Verdana, sans-serif;
     top:20px;
+    left: 0px;
+    font-size: 5em;
+    letter-spacing: 7px;
+    font: 30px / 32px D-DIN-Bold, Arial, Verdana, sans-serif;
 }
 a{
     display: flex;
