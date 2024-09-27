@@ -370,15 +370,24 @@ body {
 }
 
 
-/* 
-#blank_block {
+
+/* #blank_block {
   height: 100px;
   width: 100px;
-  /* background-color: #666; */
+  background-color: #666; 
   position: relative;
   left: 100px;
   top: 100px;
   background-image: url(./img/favicon.jpg);
   background-position: 10p;
-  /* background-image: conten; */
-} */
+   background-image: conten; 
+}   */
+
+
+@media (max-width:768px) {
+  button, 
+button:active, 
+button:focus {
+  outline: none;
+};
+}

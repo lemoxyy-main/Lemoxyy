@@ -47,3 +47,11 @@ h2{
     color: #f9a61b;
     text-decoration: none;
 }
+
+@media (max-width:768px) {
+    button, 
+  button:active, 
+  button:focus {
+    outline: none;
+  };
+  }
