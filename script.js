@@ -76,8 +76,6 @@ function openWebsite() {
 //   type();
 // });
 
-// script.js
-// Add this to your existing script.js file
 
 
 console.log("If you are reading this then Thanks for wasting you time.")
