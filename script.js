@@ -79,3 +79,6 @@ function openWebsite() {
 
 
 console.log("If you are reading this then Thanks for wasting you time.")
+
+
+
