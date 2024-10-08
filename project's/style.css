@@ -18,8 +18,8 @@
     outline: none;
   };
 @font-face {
-    font-family: kawai;
-    src: url(/calcumy/asset/Kawai\ Animal.otf);
+    font-family: kawaii;
+    src: url(./font/Kawai\ Animal.otf);
 }
 body{
     background: black;
@@ -37,12 +37,12 @@ a{
     display: flex;
     text-decoration: none;
 }
-h2{
+#calcumy{
+  font-family: kawaii;
     display: flex;
     position: relative;
     top: 70px;
     left: 2em;
-    font-family: kawai;
     font-size: 50px;
     color: #f9a61b;
     text-decoration: none;
