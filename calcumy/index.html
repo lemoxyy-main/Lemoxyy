@@ -3,21 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcumy</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <style>
+        *{
+            /* color: white; */
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <h1 id="nav-head">Calcumy</h1>
-    </nav>
-    <div>
-        <label id="input">Enter you values :- 
-            <br>
-            <input type="text">
-        </label>
-        <br> 
-        <button id="plus">+</button>
-    </div>
-    <script src="./script.js"></script>
+    <h1 id="title-calcumy">Calcumy</h1>
+    <br><br><br>
+    <p style="color: white; text-align: center;" >Note : For multiple numbers use your keyboard</p>
+    <div id="Calcumy-input">
+    <input id="input-area" type="text">
+</div>        
+<br>
+<div id="Calcumy-operator">
+    <button id="AC" onclick="AC()">C</button>
+    <button id="plus-minus" onclick="plus_minus()">+/-</button>
+    <button id="remove" onclick="remove()">&#8592;</button>
+    <button id="divide" onclick="divide()">÷</button>
+    
+</div>
+<div id="Calcumy-operator">
+    <button id="AC" onclick="seven()">7</button>
+    <button id="plus-minus" onclick="eight()">8</button>
+    <button id="nine" onclick="nine()">9</button>
+    <button id="divide" onclick="multiply()">*</button>
+</div>
+<div id="Calcumy-operator">
+    <button id="AC" onclick="four()">4</button>
+    <button id="plus-minus" onclick="five()">5</button>
+    <button id="nine" onclick="six()">6</button>
+    <button id="divide" onclick="minus()">-</button>
+</div>
+<div id="Calcumy-operator">
+    <button id="AC" onclick="one()">1</button>
+    <button id="plus-minus" onclick="eight()">2</button>
+    <button id="nine" onclick="nine()">3</button>
+    <button id="divide" onclick="multiply()">+</button>
+</div>
+<div id="Calcumy-operator">
+    <button id="AC" onclick="remainder()">%</button>
+    <button id="plus-minus" onclick="zero()">0</button>
+    <button id="nine" onclick="dot()">.</button>
+    <button id="divide" onclick="calculate()">=</button>
+</div>
+
+ 
+<script src="./src/script.js"></script>     
 </body>
 </html>

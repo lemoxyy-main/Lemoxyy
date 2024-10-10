@@ -1,0 +1,118 @@
+@font-face {
+    font-family: kawai;
+    src: url(/Lemoxyy/calcumy/asset/Kawai\ Animal.otf);
+}
+
+#title-calcumy{
+    color: white;
+    font-family: kawai;
+    font-size: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-thickness: 3px ;
+    padding-top: 10px;
+    font-weight: 10px;
+}
+
+#input-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 27%;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 10px;
+
+}
+
+#Calcumy-input {
+    padding-top: 5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+}
+#Calcumy-operator{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-left: 13%;
+    
+}
+#Calcumy-operator2{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-left: 13%;
+    margin-top: 2%;
+}
+
+#AC {
+    margin-right: 350px;
+    margin-top: 20px;
+    height: 60px;
+    width:  60px;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#remove {
+    position: relative;
+    right: 250px;
+    margin-top: 20px;
+    height: 60px;
+    width:  60px;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+#plus-minus {
+    position: relative;
+    right: 300px;
+    margin-top: 20px;
+    height: 60px;
+    width:  60px;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    /* padding-bottom: 10px; */
+}
+#divide {
+    position: relative;
+    right: 200px;
+    margin-top: 20px;
+    height: 60px;
+    width:  60px;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    /* padding-bottom: 10px; */
+}
+#nine {
+    position: relative;
+    right: 251px;
+    margin-top: 20px;
+    height: 60px;
+    width:  60px;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    /* padding-bottom: 10px; */
+}
+
