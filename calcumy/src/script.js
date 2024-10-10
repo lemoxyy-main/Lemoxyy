@@ -55,6 +55,7 @@ function divide(a,b) {
         return a / b;
 }
 function multiply(a,b) {
+    input.value += "*";
     if (a * 0){
         return a
     }
