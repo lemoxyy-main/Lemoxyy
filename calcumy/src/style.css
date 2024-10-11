@@ -2,124 +2,150 @@
     font-family: kawai;
     src: url(/Lemoxyy/calcumy/asset/Kawai\ Animal.otf);
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 
-#title-calcumy{
+
+body{
+    background-color: black;
+}
+/* Styling for the title */
+#title-calcumy {
     color: white;
-    /* font-family: kawai; */
     font-family: "Edu AU VIC WA NT Guides", cursive;
-    font-size: 70px;
-    align-items: center;
+    font-size: 4vw; 
     display: flex;
     justify-content: center;
     text-decoration: underline;
-    text-decoration-thickness: 3px ;
+    text-decoration-thickness: 3px;
     padding-top: 10px;
-    font-weight: 10px;
+    font-weight: bold;
+}
+
+/* Container for the input and buttons */
+#Calcumy-input {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 #input-area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     height: 60px;
-    width: 27%;
-    border-radius: 20px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: right;
     padding-right: 10px;
-
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: #fff;
+    max-width: 400px; /* Limit max size on large screens */
 }
 
-#Calcumy-input {
-    padding-top: 5em;
-
+/* Operator buttons container */
+#Calcumy-operator,
+#Calcumy-operator2 {
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: black;
-
-}
-#Calcumy-operator{
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-    margin-left: 13%;
-    
-}
-#Calcumy-operator2{
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-    margin-left: 13%;
-    margin-top: 2%;
+    margin: 20px 0;
+    gap: 20px; /* Space between buttons */
 }
 
-#AC {
-    margin-right: 350px;
-    margin-top: 20px;
-    height: 60px;
-    width:  60px;
-    color: black;
-    border-radius: 20px;
+/* Style for calculator buttons */
+button {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
     cursor: pointer;
-    font-size: 20px;
-}
-#remove {
-    position: relative;
-    right: 250px;
-    margin-top: 20px;
-    height: 60px;
-    width:  60px;
-    color: black;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 40px;
-    text-align: center;
-    padding-bottom: 15px;
-}
-#plus-minus {
-    position: relative;
-    right: 300px;
-    margin-top: 20px;
-    height: 60px;
-    width:  60px;
-    color: black;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    text-align: center;
-    /* padding-bottom: 10px; */
-}
-#divide {
-    position: relative;
-    right: 200px;
-    margin-top: 20px;
-    height: 60px;
-    width:  60px;
-    color: black;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    text-align: center;
-    /* padding-bottom: 10px; */
-}
-#nine {
-    position: relative;
-    right: 251px;
-    margin-top: 20px;
-    height: 60px;
-    width:  60px;
-    color: black;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    text-align: center;
-    /* padding-bottom: 10px; */
+    transition: background-color 0.3s ease;
 }
 
+/* Special buttons */
+#AC,
+#remove,
+#plus-minus,
+#divide,
+#multiply,
+#equals {
+    background-color: grey;
+    color: white;
+}
+
+/* Number buttons */
+button:nth-child(odd) {
+    background-color: grey;
+    color: white;
+}
+
+button:nth-child(even) {
+    background-color: grey;
+    color: white;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: grey;
+}
+
+/* Responsive styling for larger screens (desktops, laptops) */
+@media (min-width: 1024px) {
+    #input-area {
+        width: 50%; /* Adjust input width for larger screens */
+    }
+
+    /* Increase the gap between buttons */
+    #Calcumy-operator,
+    #Calcumy-operator2 {
+        gap: 20px;
+    }
+
+    button {
+        width: 70px; /* Larger buttons on desktops */
+        height: 70px;
+        font-size: 26px; /* Larger font for bigger buttons */
+        border-radius: 80%;
+    }
+}
+
+/* Responsive styling for tablets and medium-sized screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #input-area {
+        width: 60%;
+    }
+
+    button {
+        width: 65px;
+        height: 65px;
+        font-size: 22px;
+    }
+}
+
+/* Responsive styling for mobile users */
+@media (max-width: 767px) {
+    #input-area {
+        width: 80%; /* Make input wider for mobile */
+        font-size: 20px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    /* Reduce gaps for smaller screens */
+    #Calcumy-operator,
+    #Calcumy-operator2 {
+        gap: 5px;
+    }
+}
+
+/* Ensure the buttons and elements adjust smoothly */
 html, body {
-    height: 100%;  /* Ensures that both html and body take the full height */
-    margin: 0;     /* Remove default margin */
-    padding: 0;    /* Remove default padding */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
