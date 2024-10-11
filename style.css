@@ -1,4 +1,4 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -225,6 +225,8 @@ https://discord.gg/GuwF9D8M*/
   display: block;
   text-align: center;
   justify-content: center;
+  animation: backInUp;
+  animation-duration: 3s      ;
   font: font1;
   position: relative;
   /* top: 10px; */
