@@ -2,10 +2,12 @@
     font-family: kawai;
     src: url(/Lemoxyy/calcumy/asset/Kawai\ Animal.otf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 
 #title-calcumy{
     color: white;
-    font-family: kawai;
+    /* font-family: kawai; */
+    font-family: "Edu AU VIC WA NT Guides", cursive;
     font-size: 70px;
     align-items: center;
     display: flex;
