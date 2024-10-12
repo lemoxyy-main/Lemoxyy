@@ -234,7 +234,7 @@ https://discord.gg/GuwF9D8M*/
   text-align: center;
   justify-content: center;
   animation: backInUp;
-  animation-duration: 3s      ;
+  animation-duration: 2s      ;
   font: font1;
   position: relative;
   /* top: 10px; */
@@ -263,7 +263,10 @@ body {
     font-size: 20px;
     /* transition: 0.7s ease; */
     animation: backInUp;
-    animation-duration: 3s      ;
+    animation-duration: 2s      ;
+  }
+  body {
+    overflow: hidden;
   }
 }
 .cursor,
