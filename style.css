@@ -250,7 +250,9 @@ footer {
   #development {
     top: 2rem;
     font-size: 20px;
-    transition: 0.7s ease;
+    /* transition: 0.7s ease; */
+    animation: backInUp;
+    animation-duration: 3s      ;
   }
 }
 .cursor,
