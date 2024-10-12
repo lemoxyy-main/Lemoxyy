@@ -57,6 +57,8 @@ a {
   font-size: 5em;
   letter-spacing: 7px;
   font: 30px / 32px D-DIN-Bold, Arial, Verdana, sans-serif;
+  animation: slideInLeft;
+  animation-duration: 2s;
 }
 
 .nav-link {
@@ -68,6 +70,8 @@ a {
 }
 .hamburger {
   display: none;
+  animation: slideInRight;
+  animation-duration: 3s;
   cursor: pointer;
 }
 .bar {
@@ -119,6 +123,10 @@ a {
   .cursor2 {
     cursor: none;
   }
+}
+#nav-branding{
+  animation: slideInLeft;
+  animation-duration: 2s;
 }
 a {
   display: inline-block;
@@ -182,7 +190,7 @@ a:hover::after {
   opacity: 0.5;
 }
 
-/* #development {
+/* #develpment {
   text-align: center;
   font: 30px / 32px D-DIN-Bold, Arial, Verdana, sans-serif;
   font-size: 35px;
@@ -244,6 +252,9 @@ footer {
   margin-right: 20px; /* Adjust as needed */
   font-size: 14px; /* Adjust size */
   color: #666; /* Adjust color */
+}
+body {
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
