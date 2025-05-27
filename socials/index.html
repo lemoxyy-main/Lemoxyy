@@ -12,26 +12,26 @@
         padding: 0;
       }
       * {
-  user-select: none;
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-};
+        user-select: none;
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+      }
 
-@media (max-width:768px) {
-  button, 
-button:active, 
-button:focus {
-  outline: none;
-};
-}
+      @media (max-width: 768px) {
+        button,
+        button:active,
+        button:focus {
+          outline: none;
+        }
+      }
 
-button, 
-button:active, 
-button:focus {
-  outline: none;
-};
+      button,
+      button:active,
+      button:focus {
+        outline: none;
+      }
       @font-face {
         font-family: sign;
         src: url(./font/Driscutty\ Signature.otf);
@@ -133,7 +133,8 @@ button:focus {
         /* display: flex; */
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 50px;
+        margin-left: 15%;
         position: relative;
         right: 20px;
         /* justify-content: space-evenly; */
@@ -324,20 +325,28 @@ button:focus {
         top: -0.14em;
         left: 10px;
       }
-      #back a img {
+      #back {
         display: flex;
         height: 70px;
         width: 70px;
         position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        font-size: 5rem;
+        background: none;
         left: 90%;
       }
       @media (max-width: 768px) {
-        #back a img {
+        #back {
           display: flex;
+          display: inline;
           height: 70px;
           width: 70px;
           position: relative;
+          text-decoration: none;
           left: 80%;
+          color: white;
         }
       }
     </style>
@@ -394,11 +403,7 @@ button:focus {
       </span>
       </div> 
     </div> -->
-    <div id="back">
-      <a href="../index.html"
-        ><img src="img/backarrow.png" alt="back_arrow  "
-      /></a>
-    </div>
+    <a href="../index.html" id="back">&times;</a>
     <div class="card-container">
       <a href="https://www.instagram.com/lemoxyy__/">
         <div class="card1"></div>
