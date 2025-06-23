@@ -10,7 +10,10 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
 }
-
+@font-face {
+  font-family: ITALIANA;
+  src: url(./fonts/Italiana-Regular.ttf);
+}
 button,
 button:active,
 button:focus {
@@ -431,4 +434,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#TEXT h1 {
+  letter-spacing: 5px;
 }
