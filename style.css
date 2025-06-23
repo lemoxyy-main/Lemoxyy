@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,13 +9,13 @@
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-};
+}
 
-button, 
-button:active, 
+button,
+button:active,
 button:focus {
   outline: none;
-};
+}
 @font-face {
   font-family: font1;
   src: url(/fonts/carbon.ttf);
@@ -124,7 +124,7 @@ a {
     cursor: none;
   }
 }
-#nav-branding{
+#nav-branding {
   animation: slideInLeft;
   animation-duration: 2s;
 }
@@ -234,7 +234,7 @@ https://discord.gg/GuwF9D8M*/
   text-align: center;
   justify-content: center;
   animation: backInUp;
-  animation-duration: 2s      ;
+  animation-duration: 2s;
   font: font1;
   position: relative;
   /* top: 10px; */
@@ -263,7 +263,7 @@ body {
     font-size: 20px;
     /* transition: 0.7s ease; */
     animation: backInUp;
-    animation-duration: 2s      ;
+    animation-duration: 2s;
   }
   body {
     overflow: hidden;
@@ -387,8 +387,6 @@ body {
   }
 }
 
-
-
 /* #blank_block {
   height: 100px;
   width: 100px;
@@ -401,11 +399,36 @@ body {
    background-image: conten; 
 }   */
 
+@media (max-width: 768px) {
+  button,
+  button:active,
+  button:focus {
+    outline: none;
+  }
+}
 
-@media (max-width:768px) {
-  button, 
-button:active, 
-button:focus {
-  outline: none;
-};
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#TEXT {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  text-align: center;
+
+  height: 400px;
+  width: 90%;
+  max-width: 500px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
